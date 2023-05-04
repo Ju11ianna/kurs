@@ -1,0 +1,74 @@
+main {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.some_info {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: row;
+
+  height: 100vh;
+
+  overflow: hidden;
+
+  background: #736355;
+
+  & .info {
+    display: flex;
+
+    flex-direction: row-reverse;
+
+    color: white;
+
+    & .data {
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 1.5vh;
+
+      width: 43vw;
+
+      & h2 {
+        text-align: center;
+      }
+
+      & p {
+        width: 32vw;
+      }
+
+      & p:nth-child(odd) {
+        margin-left: auto;
+        text-align: right;
+      }
+
+      & p:nth-child(even) {
+        margin-right: auto;
+        text-align: left;
+      }
+
+      & img {
+        transition: 0.3s;
+        margin: 0 auto;
+
+        width: 32vw;
+
+        &:hover {
+          transition: 0.3s;
+
+          scale: 1.05;
+        }
+      }
+    }
+  }
+}
+
+.some_el {
+  position: absolute;
+
+  width: 50vw;
+}

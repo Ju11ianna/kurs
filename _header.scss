@@ -1,0 +1,140 @@
+header {
+  display: flex;
+
+  flex-direction: column;
+
+  margin: 0;
+
+  height: 100vh;
+
+  background-image: url('../Images/headerBg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: white;
+
+  & nav {
+    height: 13vh;
+    width: 100%;
+
+    background: #99bdd2;
+
+    & .nav {
+      display: flex;
+
+      flex-direction: column;
+      align-items: center;
+
+      gap: 1vh;
+
+      width: 80%;
+
+      & h1 {
+        margin: 1vh;
+      }
+
+      & ul {
+        display: flex;
+
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding: 0;
+        margin: 0;
+
+        width: 100%;
+
+        list-style-type: none;
+
+        & li {
+          transition: 0.3s;
+
+          font-weight: 600;
+
+          cursor: pointer;
+
+          &:hover {
+            transition: 0.3s;
+
+            scale: 1.05;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+
+  .header_content {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: auto auto;
+
+    & h1 {
+      font-size: 2em;
+
+      color: white;
+
+      width: 32vw;
+      padding: 15px;
+
+      background: rgba(139, 161, 172, 0.25);
+
+      box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(2px);
+
+      border-radius: 5px;
+    }
+
+    & button {
+      transition: 0.4s;
+
+      display: flex;
+
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      width: 16vw;
+      height: 10vh;
+
+      background: rgba(139, 161, 172, 0.25);
+
+      box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(2px);
+
+      border: none;
+      border-radius: 5px;
+
+      outline-color: rgba(105, 67, 47, 1);
+      outline-style: solid;
+      outline-width: 5px;
+
+      color: rgba(105, 67, 47, 1);
+
+      cursor: pointer;
+
+      & img {
+        width: 10vw;
+        height: 5vh;
+      }
+
+      & p {
+        margin: 0;
+
+        font-weight: 500;
+      }
+
+      &:is(:hover, :focus) {
+        transition: 0.4s;
+
+        outline-offset: 10px;
+
+        scale: 1.05;
+      }
+    }
+  }
+}

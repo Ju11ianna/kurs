@@ -1,0 +1,23 @@
+@import './header';
+@import './mains';
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: 'Open Sans';
+}
+
+.container {
+  width: 90vw;
+
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../Fonts/OpenSans-VariableFont_wdth\,wght.ttf');
+}
